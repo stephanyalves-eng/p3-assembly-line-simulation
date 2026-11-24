@@ -103,10 +103,10 @@ tests/                         # takt, RPW, Little's Law and M/M/1 checks
 
 ## 9. Deliverables and releases
 
-| Release | Milestone | Content |
-|---|---|---|
-| v0.1 | Sprint 5 (ends 14 Feb 2027) | Current-state VSM, takt, balancing, validated base model |
-| v1.0 | Sprint 6 (ends 28 Feb 2027) | Scenarios with CI, cost per unit, OEE, TOC, future-state VSM, A3, case study |
+| Release | Content |
+|---|---|
+| v0.1 | Current-state VSM, takt, balancing, validated base model |
+| v1.0 | Scenarios with CI, cost per unit, OEE, TOC, future-state VSM, A3, case study |
 
 ## 10. Assumptions and risks
 
@@ -115,8 +115,7 @@ tests/                         # takt, RPW, Little's Law and M/M/1 checks
 | Task times and failure rates are fictional | Keep them in one YAML file, state the ranges and run a sensitivity check |
 | Too few replications give overlapping intervals | Start at 30 and increase if the CI half-width hides scenario differences |
 | Warm-up bias in the first days | Choose the warm-up from a Welch plot and drop it from the statistics |
-| Carnival week (8–10 Feb 2027) shortens Sprint 5 | Protect the base model and validation; the VSM drawing can slip to Sprint 6 |
 
 ## 11. Division of work with AI
 
-Claude structures the SimPy code and the validation tests. The line data, the choice of scenarios and the A3 recommendation are mine. The argument I want to defend in interviews is the comparison, for example that scenario D delivers the same capacity as C at a lower cost per unit, more than the code itself.
+Claude structures the SimPy code and the validation tests. The line data, the choice of scenarios and the A3 recommendation are mine. The core result is the comparison between scenarios, for example that scenario D delivers the same capacity as C at a lower cost per unit.
